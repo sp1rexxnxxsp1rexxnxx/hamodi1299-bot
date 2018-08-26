@@ -12,7 +12,7 @@ client.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
     if (!message.member.voiceChannel) return message.channel.send('I can\'t find u in any voice channel')
-    let prefix = "$$";
+    let prefix = "*";
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
 
